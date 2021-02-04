@@ -20,10 +20,17 @@ struct ContentView: View {
             }
         Button(action: {self.number += 1}) {
             Text("カウント")
+                .padding()
+                .foregroundColor(.white)
+                .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.blue/*@END_MENU_TOKEN@*/)
+                .cornerRadius(10.0)
              }
             Button(action: {self.number = 0}) {
                 Text("リセット")
                     .padding()
+                    .foregroundColor(.white)
+                    .background(Color.red)
+                    .cornerRadius(10.0)
             }
         }
     }
